@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XIA 俠 | Shop</title>
+  <meta name="description" content="XIA product details: kung fu–inspired clothing, cut for movement.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Noto+Serif+TC:wght@500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-product">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" data-nav>
+    <a class="brand" href="index.html" aria-label="XIA, home">
+      <span class="seal" lang="zh-Hant" aria-hidden="true">俠</span>
+      <span class="brand-word">XIA</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#collections">Collections</a>
+      <a href="index.html#shop">Shop</a>
+      <a href="index.html#campaign">Campaign</a>
+      <a href="index.html#craft">Craft</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="nav-motion" type="button" data-motion-toggle aria-pressed="false">Pause motion</button>
+      <button class="nav-bag" type="button" data-bag-open>Bag <span class="nav-bag-count" data-bag-count>0</span></button>
+      <button class="nav-menu" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="index.html#collections">Collections</a>
+      <a href="index.html#shop">Shop</a>
+      <a href="index.html#campaign">Campaign</a>
+      <a href="index.html#craft">Craft</a>
+    </nav>
+    <button class="menu-motion" type="button" data-motion-toggle aria-pressed="false">Pause motion</button>
+  </div>
+
+  <main id="main" data-pdp></main>
+
+  <section class="related" aria-labelledby="related-title" data-related>
+    <h2 class="section-title section-title--left" id="related-title">Complete the look</h2>
+    <ul class="shop-grid" data-related-grid></ul>
+  </section>
+
+  <footer class="footer footer--simple">
+    <div class="footer-brand">
+      <p class="footer-word">XIA</p>
+      <p class="footer-tag">Kung fu–inspired clothing, cut for movement.</p>
+    </div>
+    <nav class="footer-col" aria-label="Shop">
+      <h2>Shop</h2>
+      <a href="index.html?c=shadow#shop"><span lang="zh-Hant">影</span> Shadow</a>
+      <a href="index.html?c=cinnabar#shop"><span lang="zh-Hant">朱</span> Cinnabar</a>
+      <a href="index.html?c=qing#shop"><span lang="zh-Hant">青</span> Qing</a>
+      <a href="index.html#shop">All pieces</a>
+    </nav>
+    <nav class="footer-col" aria-label="Follow">
+      <h2>Follow us</h2>
+      <a href="#" data-placeholder>Instagram</a>
+      <a href="#" data-placeholder>YouTube</a>
+      <a href="#" data-placeholder>TikTok</a>
+    </nav>
+    <div class="footer-col">
+      <h2>Contact</h2>
+      <a href="mailto:hello@xia.example">hello@xia.example</a>
+      <a href="mailto:press@xia.example">press@xia.example</a>
+    </div>
+    <div class="footer-legal">
+      <p>© 2026 XIA. Concept site: checkout is not connected.</p>
+      <button type="button" class="footer-motion" data-motion-toggle aria-pressed="false">Pause motion</button>
+      <a href="#main" class="footer-top">Back to top</a>
+    </div>
+  </footer>
+
+  <aside class="bag" data-bag hidden role="dialog" aria-modal="true" aria-labelledby="bag-title">
+    <div class="bag-scrim" data-bag-close></div>
+    <div class="bag-panel">
+      <div class="bag-head">
+        <h2 id="bag-title">Your bag</h2>
+        <button type="button" class="bag-close" data-bag-close>Close</button>
+      </div>
+      <ul class="bag-list" data-bag-list></ul>
+      <div class="bag-foot">
+        <p class="bag-total"><span>Subtotal</span><span data-bag-total>$0</span></p>
+        <button type="button" class="btn btn--block" disabled aria-describedby="bag-note">Checkout</button>
+        <p class="bag-note" id="bag-note">Checkout isn’t connected on this concept site, so no order or payment can be placed. Your bag is saved in this browser only.</p>
+      </div>
+    </div>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/bag.js"></script>
+  <script src="assets/js/cards.js"></script>
+  <script src="assets/js/product.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

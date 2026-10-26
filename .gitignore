@@ -1,0 +1,18 @@
+# Media stays out of the repo: rebuild it with the scripts in tools/
+*.mp4
+*.webm
+*.mov
+*.webp
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.wav
+assets/img/
+assets/video/
+showcase/
+
+# Build scratch and dependencies
+_build/
+node_modules/
+.claude/

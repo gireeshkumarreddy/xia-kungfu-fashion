@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XIA 俠 | The way of motion</title>
+  <meta name="description" content="XIA makes kung fu–inspired qipao, robes, outerwear and training pieces, cut for movement. Autumn/Winter 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Noto+Serif+TC:wght@500;900&display=swap" rel="stylesheet">
+  <link rel="preload" as="video" href="assets/video/hero-desktop.mp4" type="video/mp4" media="(min-width: 701px)">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    // Hold the opening title until home.js has split it into letters; never longer than 2.5s.
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('intro');
+      setTimeout(function () { document.documentElement.classList.remove('intro'); }, 2500);
+    }
+  </script>
+</head>
+<body class="home">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" data-nav>
+    <a class="brand" href="index.html" aria-label="XIA, home">
+      <span class="seal" lang="zh-Hant" aria-hidden="true">俠</span>
+      <span class="brand-word">XIA</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#collections">Collections</a>
+      <a href="#shop">Shop</a>
+      <a href="#campaign">Campaign</a>
+      <a href="#craft">Craft</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="nav-motion" type="button" data-motion-toggle aria-pressed="false">Pause motion</button>
+      <button class="nav-bag" type="button" data-bag-open>Bag <span class="nav-bag-count" data-bag-count>0</span></button>
+      <button class="nav-menu" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#collections">Collections</a>
+      <a href="#shop">Shop</a>
+      <a href="#campaign">Campaign</a>
+      <a href="#craft">Craft</a>
+    </nav>
+    <button class="menu-motion" type="button" data-motion-toggle aria-pressed="false">Pause motion</button>
+  </div>
+
+  <main id="main">
+
+    <!-- Opening scene -->
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 class="hero-title" id="hero-title" data-split>Way of motion</h1>
+      <div class="film hero-film">
+        <video data-src="assets/video/hero-desktop.mp4" data-src-mobile="assets/video/hero-mobile.mp4"
+               poster="assets/img/hero-desktop.webp" data-poster-mobile="assets/img/hero-mobile.webp"
+               data-eager muted playsinline loop
+               aria-label="A woman in a black wrap top and wide trousers moves through a kung fu form as ink brushstrokes sweep around her."></video>
+        <picture class="film-still">
+          <source media="(max-width: 700px)" srcset="assets/img/hero-still-mobile.webp">
+          <img src="assets/img/hero-still-desktop.webp" alt="" width="1920" height="1080">
+        </picture>
+        <button class="film-play" type="button" data-film-play>Play film</button>
+      </div>
+      <div class="hero-han">
+        <p lang="zh-Hant">武道</p>
+        <p class="hero-han-gloss">wǔdào, the martial way</p>
+      </div>
+      <a class="hero-cta link-arrow" href="#shop">Shop the collection</a>
+      <div class="hero-note">
+        <h2>Eastern spirit. Modern form.</h2>
+        <p>Autumn/Winter 2026: qipao, robes, outerwear and training pieces, all cut so you can move.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <h2 class="about-title" id="about-title">About XIA</h2>
+      <figure class="about-img about-face"><img src="assets/img/about-face.webp" alt="Black and white portrait of a man in black, the Shanghai skyline behind him" width="800" height="1000" loading="lazy"></figure>
+      <figure class="about-img about-gaze"><img src="assets/img/about-gaze.webp" alt="Close-up of a woman’s eyes above a round silk fan, orange blossoms in her hair" width="800" height="1000" loading="lazy"></figure>
+      <figure class="about-img about-city"><img src="assets/img/about-city.webp" alt="A woman in an embroidered black jacket and red skirt looks out over the Shanghai skyline" width="800" height="1000" loading="lazy"></figure>
+      <div class="about-copy">
+        <h3><span lang="zh-Hant">俠</span> The wandering hero</h3>
+        <p>In Chinese wuxia stories, the <i>xia</i> is the hero who keeps a code when nobody is watching. We make training wear and street clothes with the same discipline: wide cuts that let you drop into a stance, fabrics that move with you, and nothing added for show.</p>
+      </div>
+      <a class="about-link link-arrow" href="#craft">Read about the craft</a>
+    </section>
+
+    <!-- Scene: the walk -->
+    <section class="walk" aria-labelledby="walk-title">
+      <div class="walk-stage">
+        <div class="film walk-film">
+          <video data-src="assets/video/walk-desktop.mp4" data-src-mobile="assets/video/walk-mobile.mp4"
+                 poster="assets/img/walk-desktop.webp" data-poster-mobile="assets/img/walk-mobile.webp"
+                 muted playsinline loop preload="none"
+                 aria-label="Three models in black walk toward the camera: an oversized coat, a one-shoulder drape dress and a sheer wrap shirt."></video>
+          <button class="film-play" type="button" data-film-play>Play film</button>
+        </div>
+        <h2 class="walk-title" id="walk-title"><span class="walk-word walk-word--l">Built for</span> <span class="walk-word walk-word--r">movement</span></h2>
+        <figure class="walk-quote">
+          <blockquote lang="zh-Hant">動靜之機</blockquote>
+          <figcaption>“The pivot between movement and stillness.” From the <i>Taijiquan Classic</i>, attributed to Wang Zongyue.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Collections carousel -->
+    <section class="looks" id="collections" aria-labelledby="looks-title">
+      <h2 class="section-title" id="looks-title">Our collections</h2>
+      <div class="looks-stage" data-looks>
+        <dl class="looks-meta" aria-live="polite">
+          <div class="looks-meta-collection"><dt>Collection</dt><dd data-meta="collection"></dd></div>
+          <div class="looks-meta-edition"><dt>Edition</dt><dd>Autumn/Winter 2026</dd></div>
+          <div class="looks-meta-lineup"><dt>Lineup</dt><dd data-meta="lineup"></dd></div>
+          <div class="looks-meta-look"><dt>Look</dt><dd data-meta="look"></dd></div>
+        </dl>
+        <div class="looks-track" data-looks-track></div>
+        <div class="looks-nav">
+          <button type="button" class="arrow-btn arrow-btn--prev" data-looks-prev aria-label="Previous look"></button>
+          <span class="looks-count" data-looks-count aria-hidden="true">01/08</span>
+          <button type="button" class="arrow-btn" data-looks-next aria-label="Next look"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="shop" id="shop" aria-labelledby="shop-title">
+      <div class="shop-head">
+        <h2 class="section-title section-title--left" id="shop-title">Shop the pieces</h2>
+        <div class="shop-filters" role="group" aria-label="Filter by collection" data-filters>
+          <button type="button" aria-pressed="true" data-filter="all">All</button>
+          <button type="button" aria-pressed="false" data-filter="shadow"><span lang="zh-Hant">影</span> Shadow</button>
+          <button type="button" aria-pressed="false" data-filter="cinnabar"><span lang="zh-Hant">朱</span> Cinnabar</button>
+          <button type="button" aria-pressed="false" data-filter="qing"><span lang="zh-Hant">青</span> Qing</button>
+        </div>
+      </div>
+      <p class="shop-blurb" data-shop-blurb aria-live="polite">Eight pieces across three collections.</p>
+      <ul class="shop-grid" data-shop-grid></ul>
+    </section>
+
+    <!-- Campaign -->
+    <section class="campaign" id="campaign" aria-labelledby="campaign-title">
+      <div class="campaign-row">
+        <figure class="camp camp--edge"><img src="assets/img/camp-lanterns.webp" alt="" width="720" height="960" loading="lazy"></figure>
+        <figure class="camp camp--side" data-drift="-8"><img src="assets/img/camp-dancer.webp" alt="A dancer in a red dress swirls her skirt in front of neon Chinese shop signs" width="800" height="1000" loading="lazy"></figure>
+        <div class="camp camp--main film" data-colour-in>
+          <video data-src="assets/video/campaign-desktop.mp4" data-src-mobile="assets/video/campaign-mobile.mp4"
+                 poster="assets/img/campaign-desktop.webp" muted playsinline loop preload="none"
+                 aria-label="Seven models in gold-embroidered ivory and black brocade raise their heads and look into the camera."></video>
+          <h2 class="campaign-title" id="campaign-title">Campaign</h2>
+          <button class="film-play" type="button" data-film-play>Play film</button>
+        </div>
+        <div class="camp-stack" data-drift="10">
+          <figure class="camp"><img src="assets/img/camp-veil.webp" alt="A woman in grey robes lifts the sheer veil of a wide bamboo hat" width="800" height="1000" loading="lazy"></figure>
+          <figure class="camp"><img src="assets/img/camp-pipa.webp" alt="A woman in dark robes and a gold headdress holds a pipa" width="800" height="1000" loading="lazy"></figure>
+        </div>
+        <figure class="camp camp--edge camp--edge-r"><img src="assets/img/camp-steps.webp" alt="" width="720" height="960" loading="lazy"></figure>
+      </div>
+      <div class="campaign-caption">
+        <p><span lang="zh-Hant">朱</span> Cinnabar leads the season: red brocade, wide sleeves and lantern-lit halls, set against the black, white and gold of the films.</p>
+        <a class="link-arrow" href="#shop" data-filter-link="cinnabar">Shop Cinnabar</a>
+      </div>
+    </section>
+
+    <!-- Craft (details) -->
+    <section class="craft" id="craft" aria-labelledby="craft-title">
+      <h2 class="section-title section-title--left" id="craft-title">The craft</h2>
+      <div class="craft-grid">
+        <div class="craft-list" data-craft>
+          <div class="craft-item is-open">
+            <h3><button type="button" id="craft-b1" aria-expanded="true" aria-controls="craft-p1" data-detail="collar"><span lang="zh-Hant">立領</span> Standing collar</button></h3>
+            <div class="craft-panel" id="craft-p1" role="region" aria-labelledby="craft-b1">
+              <div><p>The collar stands straight up from the neckline and closes at the throat, as on traditional Chinese jackets. We back it with canvas so it holds its shape all day.</p>
+              <a class="link-arrow" href="product.html?id=stripe-qipao">Shop the Indigo pinstripe qipao</a></div>
+            </div>
+          </div>
+          <div class="craft-item">
+            <h3><button type="button" id="craft-b2" aria-expanded="false" aria-controls="craft-p2" data-detail="thread"><span lang="zh-Hant">金線</span> Gold thread</button></h3>
+            <div class="craft-panel" id="craft-p2" role="region" aria-labelledby="craft-b2" hidden>
+              <div><p>Metallic thread is stitched in dense floral patterns across the body and sleeves. The embroidery adds weight, so the jacket hangs straight and doesn’t crease.</p>
+              <a class="link-arrow" href="product.html?id=cinnabar-qipao">Shop the Cinnabar brocade qipao</a></div>
+            </div>
+          </div>
+          <div class="craft-item">
+            <h3><button type="button" id="craft-b3" aria-expanded="false" aria-controls="craft-p3" data-detail="sheer"><span lang="zh-Hant">紗</span> Sheer layers</button></h3>
+            <div class="craft-panel" id="craft-p3" role="region" aria-labelledby="craft-b3" hidden>
+              <div><p>Georgette panels sit over a solid base. Standing still, they read as one dark shape. Walking, they separate and trail behind you.</p>
+              <a class="link-arrow" href="product.html?id=sleeve-robe">Shop the Wide-sleeve red robe</a></div>
+            </div>
+          </div>
+          <div class="craft-item">
+            <h3><button type="button" id="craft-b4" aria-expanded="false" aria-controls="craft-p4" data-detail="stance"><span lang="zh-Hant">馬步</span> Horse stance</button></h3>
+            <div class="craft-panel" id="craft-p4" role="region" aria-labelledby="craft-b4" hidden>
+              <div><p>Horse stance is the low, wide position at the root of most kung fu training. Our trousers have a deep gusset and a wide leg, so you can sink into it without the seams pulling.</p>
+              <a class="link-arrow" href="product.html?id=stance-trouser">Shop the Horse stance trouser</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="craft-view film">
+          <video class="is-active" data-manual data-detail-film="collar" data-src="assets/video/detail-collar.mp4" poster="assets/img/detail-collar.webp" muted playsinline loop preload="none" aria-label="Close-up of a gold-embroidered standing collar as the model lifts his head."></video>
+          <video data-manual data-detail-film="thread" data-src="assets/video/detail-thread.mp4" poster="assets/img/detail-thread.webp" muted playsinline loop preload="none" aria-label="Close-up of gold-thread embroidery on an ivory jacket beside black floral brocade."></video>
+          <video data-manual data-detail-film="sheer" data-src="assets/video/detail-sheer.mp4" poster="assets/img/detail-sheer.webp" muted playsinline loop preload="none" aria-label="A sheer black wrap shirt and wide trousers moving as the model walks."></video>
+          <video data-manual data-detail-film="stance" data-src="assets/video/detail-stance.mp4" poster="assets/img/detail-stance.webp" muted playsinline loop preload="none" aria-label="Wide-leg trousers swinging out as the wearer turns through a kung fu form."></video>
+          <button class="film-play" type="button" data-film-play>Play film</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action + marquee -->
+    <section class="claim" aria-labelledby="claim-title">
+      <img class="claim-fig claim-fig--l" src="assets/img/claim-crouch.webp" alt="" width="720" height="768" loading="lazy">
+      <img class="claim-fig claim-fig--r" src="assets/img/claim-stand.webp" alt="" width="600" height="1200" loading="lazy">
+      <h2 class="claim-title" id="claim-title"><a class="link-arrow" href="#shop">Shop all pieces</a></h2>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Eastern spirit. Modern form.</span><i class="seal seal--sm">俠</i>
+          <span>Discipline in every thread</span><i class="seal seal--sm">俠</i>
+          <span><b lang="zh-Hant">武道</b> The martial way</span><i class="seal seal--sm">俠</i>
+          <span>Eastern spirit. Modern form.</span><i class="seal seal--sm">俠</i>
+          <span>Discipline in every thread</span><i class="seal seal--sm">俠</i>
+          <span><b lang="zh-Hant">武道</b> The martial way</span><i class="seal seal--sm">俠</i>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Closing shot: the dragon, then the credits -->
+  <div class="ending" data-ending>
+    <section class="finale" aria-label="Closing film">
+      <div class="film finale-film">
+        <video data-src="assets/video/dragon-desktop.mp4" data-src-mobile="assets/video/dragon-mobile.mp4"
+               poster="assets/img/dragon-desktop.webp" data-poster-mobile="assets/img/dragon-mobile.webp"
+               muted playsinline loop preload="none"
+               aria-label="A red smoke dragon coils through the sky above a lone swordsman in a bamboo hat, standing in a field of fallen red leaves."></video>
+        <button class="film-play" type="button" data-film-play>Play film</button>
+      </div>
+      <div class="finale-fade" aria-hidden="true"></div>
+      <div class="finale-bar finale-bar--top" aria-hidden="true"><p>XIA <span lang="zh-Hant">俠</span></p><p>Autumn/Winter 2026</p></div>
+      <div class="finale-bar finale-bar--bottom" aria-hidden="true"><p>The way of motion</p></div>
+      <p class="finale-mark" aria-hidden="true"><span class="seal seal--lg" lang="zh-Hant">俠</span><span class="finale-mark-word">XIA</span></p>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <p class="footer-word">XIA</p>
+        <p class="footer-tag">Kung fu–inspired clothing, cut for movement.</p>
+      </div>
+      <nav class="footer-col" aria-label="Shop">
+        <h2>Shop</h2>
+        <a href="#shop" data-filter-link="shadow"><span lang="zh-Hant">影</span> Shadow</a>
+        <a href="#shop" data-filter-link="cinnabar"><span lang="zh-Hant">朱</span> Cinnabar</a>
+        <a href="#shop" data-filter-link="qing"><span lang="zh-Hant">青</span> Qing</a>
+        <a href="#shop" data-filter-link="all">All pieces</a>
+      </nav>
+      <nav class="footer-col" aria-label="Follow">
+        <h2>Follow us</h2>
+        <a href="#" data-placeholder>Instagram</a>
+        <a href="#" data-placeholder>YouTube</a>
+        <a href="#" data-placeholder>TikTok</a>
+      </nav>
+      <div class="footer-col">
+        <h2>Contact</h2>
+        <a href="mailto:hello@xia.example">hello@xia.example</a>
+        <a href="mailto:press@xia.example">press@xia.example</a>
+      </div>
+      <div class="footer-legal">
+        <p>© 2026 XIA. Concept site: checkout is not connected.</p>
+        <button type="button" class="footer-motion" data-motion-toggle aria-pressed="false">Pause motion</button>
+        <a href="#main" class="footer-top">Back to top</a>
+      </div>
+    </footer>
+  </div>
+
+  <aside class="bag" data-bag hidden role="dialog" aria-modal="true" aria-labelledby="bag-title">
+    <div class="bag-scrim" data-bag-close></div>
+    <div class="bag-panel">
+      <div class="bag-head">
+        <h2 id="bag-title">Your bag</h2>
+        <button type="button" class="bag-close" data-bag-close>Close</button>
+      </div>
+      <ul class="bag-list" data-bag-list></ul>
+      <div class="bag-foot">
+        <p class="bag-total"><span>Subtotal</span><span data-bag-total>$0</span></p>
+        <button type="button" class="btn btn--block" disabled aria-describedby="bag-note">Checkout</button>
+        <p class="bag-note" id="bag-note">Checkout isn’t connected on this concept site, so no order or payment can be placed. Your bag is saved in this browser only.</p>
+      </div>
+    </div>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/bag.js"></script>
+  <script src="assets/js/cards.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>
